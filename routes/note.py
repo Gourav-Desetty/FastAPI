@@ -22,7 +22,7 @@ async def read_item(request: Request):
             "important":doc["important"]
         })
     return templates.TemplateResponse(
-        "index.html",  # template filename first
+        "index.html",  
         {"request": request, "newdocs": newdocs}
     )   
 
